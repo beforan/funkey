@@ -17,6 +17,7 @@ document.addEventListener("keydown", (e) => {
 
   container.style.backgroundColor = getRgbaColorString(...bg);
   screen.style.color = getRgbaColorString(...fg);
+  screen.classList.remove("init")
   screen.innerHTML = e.key;
 });
 
