@@ -20,6 +20,4 @@ document.addEventListener("keydown", (e) => {
   screen.innerHTML = e.key;
 });
 
-// TODO: disable right click and if possible, selecting text
-
-
+document.addEventListener('contextmenu', e => e.preventDefault());
