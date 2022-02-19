@@ -10,6 +10,8 @@ const randomComplementaryColors = () => {
 const getRgbaColorString = (r, g, b) => `rgba(${r}, ${g}, ${b},1)`;
 
 document.addEventListener("keydown", (e) => {
+  e.preventDefault(); // This should stop some annoyances with F keys or other bound browser behaviour, hopefully.
+  
   const [bg, fg] = randomComplementaryColors();
 
   const container = document.getElementById("container");
